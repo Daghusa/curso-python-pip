@@ -7,7 +7,7 @@ def read_csv(path):
     data =[]
     for row in reader:
       iterable= zip (header, row)
-      print(list(iterable)) # convertimos en listas (tuplas)
+      #print(list(iterable)) # convertimos en listas (tuplas)
       #print ('***' * 5)
       #print(row)
       country_dict= {key: value for key, value in iterable}
@@ -17,6 +17,6 @@ def read_csv(path):
       
 
 if __name__ == '__main__':
-  data = read_csv("./app/data.csv")
+  data = read_csv("data.csv")
   print(data[0])
            
